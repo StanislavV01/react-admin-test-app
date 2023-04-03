@@ -54,15 +54,15 @@ if(product){
     
     <Grid
         container
-        spacing={{ xs: 1, md: 2 }}
-        columns={{ xs: 6, sm: 12, md: 12 }}
+        spacing={{ xs: 1, md: 7 }}
+        columns={{ xs: 6, sm: 6, md: 12 }}
       >
-     <Grid item xs={4} sm={6} md={6}>
+     <Grid item xs={12} sm={12} md={6} lg={6}>
    
- <img src={product?.images[0]} alt={product.title} />
+      <img src={product?.images[0]} alt={product.title}  />
 
      </Grid>
-     <Grid item xs={4} sm={6} md={6} >
+     <Grid item xs={12} sm={12} md={6} lg={6} >
        <Paper sx={{padding:'10px 15px', borderRadius:'25px  '}}>
        <InfoRow char='ID' value={product.id}/>
         <InfoRow char='Title' value={product.title}/>
